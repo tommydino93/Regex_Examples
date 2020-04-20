@@ -20,7 +20,6 @@ Conclusions: stabilité de la maladie."  # type: str # input path
 >>> match_string
 'Paris, le 28.01.2016'
 ```
-
 ### Side notes:
 
 * **\\.** is used for exactly matching the "." character between dd.mm.yyyy
