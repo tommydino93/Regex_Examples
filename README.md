@@ -1,6 +1,7 @@
 # Regex Examples
 This repository contains examples of regular expressions in python
 
+![alt text](https://github.com/tommydino93/Regex_Examples/blob/master/regex.png)
 
 ## Useful rules:
 * **\\.** is used for exactly matching the "." character (e.g. between dd.mm.yyyy)
