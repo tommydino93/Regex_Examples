@@ -11,3 +11,4 @@ This repository contains examples of regular expressions in python
 * **(\.*)** is used to match a group (because of ()) of 0 or more of any character (because of \.*); it useful for cases where there is no whitespace after the dot (e.g. "end of sentence.Comparatif")
 * **[Cc]** is used to match the letter "c" which could be either capital or non-capital
 * **?** indicates that a char (or group) is optional. E.g. "aa?" will match either one or two letters "a" cause the second char is optional
+* **|** is used to reproduce the **logical OR**. E.g. `re.compile("Sent from (iPhone|iPod)")` to match either iPhone OR iPod
