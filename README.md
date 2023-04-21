@@ -12,3 +12,4 @@ This repository contains examples of regular expressions in python
 * **[Cc]** is used to match the letter "c" which could be either capital or non-capital
 * **?** indicates that a char (or group) is optional. E.g. "aa?" will match either one or two letters "a" cause the second char is optional
 * **|** is used to reproduce the **logical OR**. E.g. `re.compile("Sent from (iPhone|iPod)")` to match either iPhone OR iPod
+* **secret[\\.,]** is used to match the word "secret" followed either by a "." or a ","
