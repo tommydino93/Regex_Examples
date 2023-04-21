@@ -3,7 +3,7 @@ This repository contains examples of regular expressions in python
 
 ![alt text](https://github.com/tommydino93/Regex_Examples/blob/master/regex.png)
 
-## Useful rules:
+## Specific matching rules:
 * **\\.** is used for exactly matching the "." character (e.g. between dd.mm.yyyy)
 * **.** is used to match whichever character (either capital or non-capital)
 * **\w+** matches a sequence of alphanumeric characters (including _), but does not match special characters such as "/"
@@ -13,3 +13,7 @@ This repository contains examples of regular expressions in python
 * **?** indicates that a char (or group) is optional. E.g. "aa?" will match either one or two letters "a" cause the second char is optional
 * **|** is used to reproduce the **logical OR**. E.g. `re.compile("Sent from (iPhone|iPod)")` to match either iPhone OR iPod
 * **secret[\\.,]** is used to match the word "secret" followed either by a "." or a ","
+
+## General rules:
+* `re.search(r"smth", file)` finds only the first match
+* `re.findall(r"smth", file)` finds all the matches
