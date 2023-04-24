@@ -15,5 +15,10 @@ This repository contains examples of regular expressions in python
 * **secret[\\.,]** is used to match the word "secret" followed either by a "." or a ","
 * **(secret)[\.,]** is used to match only the word "secret" and get rid of the punctuation that comes after it
 ## General rules:
-* `re.search(r"smth", file)` finds only the first match
-* `re.findall(r"smth", file)` finds all the matches
+* `re.search(r"smth", file)` finds only the first match, and also provides the indexes of the match in the text
+* `re.findall(r"smth", file)` finds all the matches, but we lose the information about the indexes
+* `re.finditer(r"smth", file)` finds all the matches and also retains the indexes. It must be run as:
+```
+for match in re.finditer(r"(secret)[\.,]", file_content):
+   print(match)
+```
