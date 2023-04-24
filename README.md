@@ -13,7 +13,7 @@ This repository contains examples of regular expressions in python
 * **?** indicates that a char (or group) is optional. E.g. "aa?" will match either one or two letters "a" cause the second char is optional
 * **|** is used to reproduce the **logical OR**. E.g. `re.compile("Sent from (iPhone|iPod)")` to match either iPhone OR iPod
 * **secret[\\.,]** is used to match the word "secret" followed either by a "." or a ","
-
+* **(secret)[\.,]** is used to match only the word "secret" and get rid of the punctuation that comes after it
 ## General rules:
 * `re.search(r"smth", file)` finds only the first match
 * `re.findall(r"smth", file)` finds all the matches
